@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // var peca_1 = parseInt(12);
+        // var qtd_1 = parseInt(1);
+        // var valor_1 = parseFloat(5.30);
+
+        // var peca_2 = parseInt(16);
+        // var qtd_2 = parseInt(2);
+        // var valor_2 = parseFloat(5.10);
+
+        // var valor_pago = (qtd_1 * valor_1) + (qtd_2 * valor_2);
+
+        // document.write(`VALOR A PAGAR: R$ ${valor_pago.toFixed(2)}`);
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+/**
+ * Escreva a sua solução aqui
+ * Code your solution here
+ * Escriba su solución aquí
+ */
+var peca_1 = parseInt(lines.shift());
+var qtd_1 = parseInt(lines.shift());
+var valor_1 = parseFloat(lines.shift());
+
+var peca_2 = parseInt(lines.shift());
+var qtd_2 = parseInt(lines.shift());
+var valor_2 = parseFloat(lines.shift());
+
+var valor_pago = parseFloat(qtd_1 * valor_1) + (qtd_2 * valor_2);
+
+console.log(`VALOR A PAGAR: R$ ${valor_pago.toFixed(2)}`);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

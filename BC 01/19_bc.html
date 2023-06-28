@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var salario = parseFloat(prompt("Digite seu salario"));
+
+        if(salario <= 2000.00){
+            document.write("Isento");
+        } 
+        
+        else if(salario > 2000.00 && salario <= 3000.00){
+            var res1 = (salario - 2000) *0.08;
+            document.write(`R$ ${res1.toFixed(2)}`);
+        }
+        
+        else if(salario > 3000.00 && salario <= 4500.00){
+
+            //sei que 2000 é isento e 1000 é cobrado 0.08, o restante então devo cobrar 0.18
+            // var calculo = ((salario - 3000)* 0.18);
+            // var res = ((1000) * 0.08);
+
+            // var resultado = calculo + res;
+            // document.wtite(`R$ ${resultado}`);
+
+            var res2 = (salario - 3000)*0.18 + (1000 * 0.08);
+            document.write(`R$ ${res2.toFixed(2)}`);
+        } 
+        
+        else {
+
+            //acima de 4500 é cobrado o valor maximo, de 4500 sei que 1000 é cobrado 8%, o restante então (1500) é cobrado 0.18
+            var res3 = (salario - 4500)*0.28 + (1500*0.18)+(1000*0.08);
+
+            document.write(`R$ ${res3.toFixed(2)}`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

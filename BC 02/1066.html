@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var quantidade = 0
+        var quantidade2 = 0
+        var quantidade3 = 0
+        var quantidade4 = 0
+
+        for(i = 0; i<5; i++){
+            var valor = parseInt(prompt("Digite um valor"));
+
+            //var parimp = valor%2
+            if(valor%2 ==0){
+                quantidade++;
+
+             }else{
+                 quantidade2++;
+            }
+            
+            if(valor > 0){
+                 quantidade3++;
+
+             }else if(valor < 0){
+                 quantidade4++;
+            }
+
+    }
+        console.log(`${quantidade} valor(es) par(es)`);
+        console.log(`${quantidade2} valor(es) impar(es)`);
+        console.log(`${quantidade3} valor(es) positivo(s)`);
+        console.log(`${quantidade4} valor(es) negativo(s)`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
